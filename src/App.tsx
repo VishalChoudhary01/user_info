@@ -10,7 +10,7 @@ const App: React.FC = () => {
       <CssBaseline />
       <AppBar position="static" color="primary" sx={{background:"linear-gradient(to right top, #212123, #2a2f39, #2a4050, #215364, #076673)"}}>
         <Toolbar >
-          <Typography variant="h6" component="div" sx={{flexGrow: 1, textAlign: 'center',fontSize:"2em", fontWeight:500,paddingX:"2%",letterSpacing:"5px" }}>
+          <Typography variant="h6" component="div" sx={{flexGrow: 1, textAlign: 'center',fontSize:"2em", fontWeight:500,paddingX:"2%",letterSpacing:"5px", wordSpacing:"8px" }}>
             USER INFORMATION
           </Typography>
         </Toolbar>

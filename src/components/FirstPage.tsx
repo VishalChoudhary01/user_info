@@ -48,7 +48,7 @@ const FirstPage: React.FC = () => {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '75vh' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '80vh' }}>
       <Container maxWidth="sm" style={{ flexGrow: 1, borderRadius: '20%' }}>
         <Paper elevation={8} sx={{ py: 4, px: 10, background: '#EEE' }}>
           <Typography variant="h5" gutterBottom>

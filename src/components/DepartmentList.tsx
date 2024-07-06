@@ -38,6 +38,10 @@ const DepartmentList: React.FC = () => {
     setChecked({ ...checked, [department]: newChecked });
   };
 
+  const capitalize = (s: string) => {
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  };
+
   return (
     <List>
       {departments.map((dept) => (
@@ -77,7 +81,7 @@ const DepartmentList: React.FC = () => {
                         onChange={() => handleChildChange(dept.department, idx)}
                       />
                     }
-                    label={<Typography variant="body2">{sub}</Typography>}
+                    label={<Typography variant="body2">{capitalize(sub.replace('_', ' '))}</Typography>}
                   />
                 </ListItemButton>
               ))}
