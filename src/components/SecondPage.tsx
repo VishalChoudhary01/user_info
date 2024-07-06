@@ -10,7 +10,7 @@ const SecondPage: React.FC = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const urlAPI = process.env.REACT_APP_API_URL;
+      const urlAPI = process.env.REACT_APP_API_URL!;
       try{
         const response = await axios.get<Post[]>(urlAPI);
       setPosts(response.data);
