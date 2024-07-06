@@ -64,7 +64,7 @@ const DepartmentList: React.FC = () => {
                   onChange={() => handleParentChange(dept.department)}
                 />
               }
-              label={<Typography variant="subtitle1">{dept.department}</Typography>}
+              label={<Typography variant="subtitle1">{capitalize(dept.department.replace('_', ' '))}</Typography>}
             />
             <ListItemIcon>
               {open === dept.department ? <KeyboardArrowDownIcon /> : <KeyboardArrowRightIcon />}
